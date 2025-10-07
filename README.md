@@ -1,1 +1,0 @@
-# Survey-or-polling-Application
