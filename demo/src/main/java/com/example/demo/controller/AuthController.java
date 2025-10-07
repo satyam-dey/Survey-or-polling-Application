@@ -30,4 +30,15 @@ public class AuthController {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
     }
+
+    @PostMapping("/login")
+    public ResponseEntity<?> loginUser(@RequestBody User user) {
+        try {
+            String token = authService.loginUser(user.getUsername(), user.getPassword());
+            // Return the token in a JSON object
+            return ResponseEntity.ok(java.util.Collections.singletonMap("token", token));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
 }

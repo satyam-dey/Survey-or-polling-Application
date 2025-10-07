@@ -24,5 +24,14 @@ public class Option {
     @JoinColumn(name = "question_id", nullable = false)
     private Question question;
 
+    public void setOptionText(Object optionText2) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setOptionText'");
+    }
+
     // Getters and Setters...
+
+    public void setQuestion(Question question) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 }

@@ -32,4 +32,16 @@ public class Question {
     private List<Option> options;
 
     // Getters and Setters...
+
+    public void setQuestionText(Object questionText) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public void setSurvey(Survey survey) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public void setOptions(List<Option> options) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 }
